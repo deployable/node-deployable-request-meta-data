@@ -1,0 +1,35 @@
+{
+  "name": "deployable-request-meta-data",
+  "version": "0.1.0",
+  "description": "Request Meta Data",
+  "main": "lib/request_meta_data.js",
+  "scripts": {
+    "test": "mocha",
+    "test:debug": "DEBUG='*' mocha debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deployable/node-deployable-request-meta-data.git"
+  },
+  "keywords": [
+    "deployable",
+    "module"
+  ],
+  "author": "Matt Hoyle <code at deployable.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deployable/node-deployable-request-meta-data/issues"
+  },
+  "homepage": "https://github.com/deployable/deployable-request-meta-data#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "debug": "^2",
+    "deployable-mixin-class_uid": "^0.1.0",
+    "deployable-timer": "^0.2.0",
+    "mixwith": "~0.1.1"
+  }
+}
