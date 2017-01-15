@@ -1,6 +1,6 @@
 {
   "name": "deployable-request-meta-data",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "description": "Request Meta Data",
   "main": "lib/request_meta_data.js",
   "scripts": {
