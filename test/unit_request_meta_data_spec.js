@@ -1,5 +1,6 @@
 const debug = require('debug')('dply:test:unit:request_meta_data')
 const RequestMetaData = require('../lib/request_meta_data')
+const expect = require('chai').expect
 
 
 describe('Unit::RequestMetaData', function () {
@@ -25,7 +26,7 @@ describe('Unit::RequestMetaData', function () {
       expect( parent ).to.equal( "MixinClassUid" )
     })
 
-    
+
     it('should start and return a time', function(){
       expect( rmd.start() ).to.be.a.number
     })
@@ -36,14 +37,14 @@ describe('Unit::RequestMetaData', function () {
     })
 
     it('should return the total after end', function(){
-      a = rmd.start()
-      b = rmd.end()
+      let a = rmd.start()
+      let b = rmd.end()
       expect( rmd.totalTime() ).to.be.a.number
       expect( rmd.totalTime() ).to.equal( b - a )
     })
 
     it('should return a current time value', function(done){
-      a = rmd.start()
+      let a = rmd.start()
       setTimeout(()=>{
         expect( rmd.currentTime() ).to.be.a.number
         expect( rmd.currentTime() ).to.be.gt(2)
